@@ -20,12 +20,12 @@ export default function App() {
 	 console.log(data); 
           axios.post('https://formsubmit.co/ajax/kontakt.nalivarna@gmail.com', data)
     .then(response => { 
-  alert('Děkujeme! Ozveme se Vám nejpozději do 24 hodin!'); 
-  reset({name:"", email:"", phone:"", specialRequests:"", choice:"", checkBox:""}) 
+  alert('Děkujeme! Ozveme se Vám nejpozději do 24 hodin! Kromě složky Přijatých zpráv zkontrolujte, prosím, také i svou složku Spam.'); 
+  reset({name:"", email:"", phone:"", crashCourse:"", choice:"", checkBox:""}) 
   window.scrollTo(0, 0);
   
 })
-   .catch(response=> {alert('Je nám to líto! Něco se pokazilo! Zkuste to znovu.'); })
+   .catch(response=> {alert('Je nám to líto! Něco se pokazilo! Zkuste to, prosím, znovu.'); })
     
 
 	}    
@@ -84,7 +84,7 @@ export default function App() {
 		<Form.Field>
 		    <div className="form-floating mb-3">                    
                     <textarea className="form-control" id="message" type="text" placeholder="Enter your message here..." style={{height: "10rem"}}
-                        {...register("specialRequests")}
+                        {...register("crashCourse")}
                     />
 		    <label>Mám zájem o rychlokurz z předmětu...</label>
 		    </div>
