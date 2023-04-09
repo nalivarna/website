@@ -54,10 +54,10 @@ export default function App() {
                                 pattern: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
                             })}
                     />
-		    <label>Email<span className="required">*</span></label>
+		    <label>E-mail<span className="required">*</span></label>
 		    </div>
                 </Form.Field>
-		{errors.email && <p style={{color:"red"}}>Pole Email je požadováno</p>}
+		{errors.email && <p style={{color:"red"}}>Pole E-mail je požadováno</p>}
                 <Form.Field>
 		    <div className="form-floating mb-3">                    
                     <input
